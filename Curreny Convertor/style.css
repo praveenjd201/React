@@ -1,0 +1,85 @@
+html,body{
+  font-family: arial;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  height: 100vh;
+  /* width: 100vh; */
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color:bisque;
+  padding: 12px 24px;
+  border-radius: 12px; 
+}
+.container h2{  
+  text-align:center;  
+}
+.container .box{
+  display: flex;
+  gap:10px ;
+
+}
+
+.container .box .left-box{
+  display: flex;
+  gap:10px ;
+  flex-direction: column;
+}
+
+.container .box .right-box{
+  display: flex;
+  gap:10px ;
+  flex-direction: column;
+}
+select{
+  width: auto;
+  height: 40px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color:coral;
+  outline: none;
+  color: black;
+  margin: 0.2em 0;
+  padding: 0 1em;
+  border-radius: 10px;
+  border: none;
+}
+input{
+  width: auto;
+  height: 40px;
+  font-size: 1em;
+  margin: 0.2em 0;
+  border-radius: 10px;
+  border: none;
+  background: #cccccc;
+  outline: none;
+  padding: 0 1em;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.btn button{
+  background-color: grey;
+  border: none;
+  border-radius: 8px;
+  padding: .6rem 4rem;
+  cursor: pointer;
+}
+.btn button:hover{
+  background-color: rgb(137, 131, 131);
+}
+.error-msg{
+  margin-top:  16px;
+  text-align: center;
+  color: red;
+}
+
