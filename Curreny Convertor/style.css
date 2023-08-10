@@ -13,7 +13,7 @@ body{
   align-items: center;
 }
 
-.container{
+.container{  
   background-color:bisque;
   padding: 12px 24px;
   border-radius: 12px; 
@@ -23,6 +23,7 @@ body{
 }
 .container .box{
   display: flex;
+  flex-direction: column;
   gap:10px ;
 
 }
@@ -30,15 +31,16 @@ body{
 .container .box .left-box{
   display: flex;
   gap:10px ;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .container .box .right-box{
   display: flex;
   gap:10px ;
-  flex-direction: column;
+  
 }
 select{
+  
   width: auto;
   height: 40px;
   font-size: 1.2em;
@@ -52,7 +54,8 @@ select{
   border: none;
 }
 input{
-  width: auto;
+  
+  width: 290px;
   height: 40px;
   font-size: 1em;
   margin: 0.2em 0;
@@ -81,5 +84,32 @@ input{
   margin-top:  16px;
   text-align: center;
   color: red;
+}
+
+@media(max-width:700px){
+  .container{
+    background-color:white;
+    width: 70%;
+
+  }
+  .container .box{
+    
+  }
+  .container .box .right-box{
+
+  }
+  .container .box .right-box{
+    
+  }
+  input{
+    width: 70%;
+  }
+  select{
+    width: 70%;
+  }
+  .btn button{
+
+  }
+  
 }
 
